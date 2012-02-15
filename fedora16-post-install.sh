@@ -44,8 +44,11 @@ yum -y install vsftpd
 # Alacarte - for creating custom application launchers
 yum -y install alacarte
 
-# Some PHP modules I need for web development
+# PHP modules I need for web development
 sudo yum -y install php-gd php-mbstring php-pgsql php-xml
+
+# Python modules I need for web development
+sudo yum -y install MySQL-python
 
 # MySQL Workbench - for designing MySQL databases visually
 sudo yum -y install mysql-workbench
