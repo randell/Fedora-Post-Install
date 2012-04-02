@@ -102,7 +102,8 @@ chmod 770 /home/randell/
 # Zend Framework
 curl http://framework.zend.com/releases/ZendFramework-1.11.11/ZendFramework-1.11.11.tar.gz | tar xz
 
-
+# Xournal - for note taking ang sketching; I use this to highlight PDFs
+yum -y install xournal
 
 
 
