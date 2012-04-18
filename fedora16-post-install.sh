@@ -50,6 +50,9 @@ sudo yum -y install php-gd php-mbstring php-pgsql php-xml
 # Python modules I need for web development
 sudo yum -y install MySQL-python
 
+# setuptools for easier Python package management
+sudo yum -y install python-setuptools python-setuptools-devel
+
 # MySQL Workbench - for designing MySQL databases visually
 sudo yum -y install mysql-workbench
 
