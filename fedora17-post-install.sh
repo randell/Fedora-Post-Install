@@ -48,7 +48,7 @@ yum -y install alacarte
 sudo yum -y install php-gd php-mbstring php-pgsql php-xml
 
 # Python modules I need for web development
-sudo yum -y install MySQL-python python-twisted
+sudo yum -y install MySQL-python python-twisted python-BeautifulSoup python-simplejson python-ldap python-dateutil python-twisted python-twisted-web2
 
 # setuptools for easier Python package management
 sudo yum -y install python-setuptools python-setuptools-devel
