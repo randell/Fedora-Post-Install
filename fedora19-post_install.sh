@@ -87,6 +87,9 @@ sudo chmod 646 /etc/profile
 sudo echo "$EXPORT_JAVA_HOME" >> /etc/profile
 sudo chmod 644 /etc/profile
 
+sudo wget -P /etc/yum.repos.d/ http://spot.fedorapeople.org/steam/steam.repo
+sudo yum install steam
+
 # JavaHL
 sudo yum -y install subversion-javahl
 
