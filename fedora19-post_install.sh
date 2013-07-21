@@ -88,10 +88,22 @@ sudo echo "$EXPORT_JAVA_HOME" >> /etc/profile
 sudo chmod 644 /etc/profile
 
 sudo wget -P /etc/yum.repos.d/ http://spot.fedorapeople.org/steam/steam.repo
-sudo yum install steam
+sudo yum -y install steam
+
+# Node JS
+sudo yum -y install nodejs
+
+# Vim
+sudo yum -y install vim
+
+# Installs audit2allow, which is required so that SELinux doesn't complain about Chrome
+sudo yum -y install policycoreutils-devel
 
 # JavaHL
 sudo yum -y install subversion-javahl
+
+#
+sudo yum -y install gnome-tweak-tool
 
 # Add httpd to startup
 #chkconfig --add httpd
