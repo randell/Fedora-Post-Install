@@ -47,8 +47,11 @@ sudo yum -y install MySQL-python python-twisted python-BeautifulSoup python-simp
 # MySQL Workbench - for designing MySQL databases visually
 sudo yum -y install mysql-workbench
 
+# Else, we'll get 'sqlite3.h missing' when creating a new rails app.
+sudo yum -y install sqlite-devel
+
 # Install RVM with Ruby and Rails
-curl -L https://get.rvm.io | bash -s stable --ruby
+curl -L https://get.rvm.io | bash -s stable --ruby --rails
 curl -L https://get.rvm.io | bash -s stable --rails
 
 # Calibre - For converting e-books to different formats and for managing your e-book collection.
