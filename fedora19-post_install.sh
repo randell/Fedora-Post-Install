@@ -108,10 +108,26 @@ sudo yum -y install subversion-javahl
 #
 sudo yum -y install gnome-tweak-tool
 
-# Add httpd to startup
-#chkconfig --add httpd
-#systemctl start mysqld.service
-#systemctl enable mysqld.service
+# Install MySQL/MariaDB
+sudo yum -y install mysql mysql-server
+
+# Create the system startup links for MySQL, so that MySQL starts automatically whenever the system boots
+systemctl enable mysqld.service
+
+# Start the MySQL server
+systemctl start mysqld.service
+
+# Add a password to 'root' MySQL user
+mysql_secure_installation
+
+# Install Apache2
+sudo yum -y install httpd
+
+# Create startup links for Apache, so that Apache starts automatically whenever the system boots
+systemctl enable httpd.service
+
+# Start Apache
+systemctl start httpd.service
 
 # Give permission to apache
 #usermod -a -G randell apache
