@@ -134,12 +134,11 @@ systemctl start httpd.service
 #chmod 770 /home/randell/
 
 
+# For dealing with hard drives in exFAT
+sudo yum -y install exfat-utils fuse-exfat
 
-
-
-
-
-
+# For formatting partitions
+sudo yum -y install gparted
 
 
 
