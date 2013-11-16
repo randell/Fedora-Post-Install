@@ -140,5 +140,5 @@ sudo yum -y install exfat-utils fuse-exfat
 # For formatting partitions
 sudo yum -y install gparted
 
-
+sudo yum -y install lshw
 
