@@ -49,6 +49,10 @@ systemctl enable httpd.service
 # Start Apache
 systemctl start httpd.service
 
+# Install MySQL/MariaDB
+sudo yum -y install mysql mysql-server
+systemctl start mysqld.service ## use restart after update
+
 # Node JS
 sudo yum -y install nodejs
 
