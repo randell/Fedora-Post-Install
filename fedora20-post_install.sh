@@ -62,6 +62,9 @@ sudo yum -y install vim
 # JavaHL
 sudo yum -y install subversion-javahl
 
+#
+sudo yum -y install calibre
+
 ## java ##
 alternatives --install /usr/bin/java java /usr/java/latest/jre/bin/java 200000
 ## javaws ##
