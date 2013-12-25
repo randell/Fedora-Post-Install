@@ -43,11 +43,11 @@ sudo yum -y install xournal
 # Apache Httpd
 sudo yum -y install httpd
 
+# Start Apache
+service httpd start
+
 # Create startup links for Apache, so that Apache starts automatically whenever the system boots
 systemctl enable httpd.service
-
-# Start Apache
-systemctl start httpd.service
 
 # Install MySQL/MariaDB
 sudo yum -y install mysql mysql-server
@@ -85,3 +85,5 @@ sudo chmod 644 /etc/profile
 
 sudo wget -P /etc/yum.repos.d/ http://spot.fedorapeople.org/steam/steam.repo
 sudo yum -y install steam
+
+install php-pecl-apc php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongo php-sqlite php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
