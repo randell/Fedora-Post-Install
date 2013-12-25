@@ -78,4 +78,10 @@ alternatives --install /usr/bin/javac javac /usr/java/latest/bin/javac 200000
 alternatives --install /usr/bin/jar jar /usr/java/latest/bin/jar 200000
 
 # Add to /etc/profile
-export JAVA_HOME="/usr/java/latest"
+EXPORT_JAVA_HOME='export JAVA_HOME="/usr/java/latest/"'
+sudo chmod 646 /etc/profile
+sudo echo "$EXPORT_JAVA_HOME" >> /etc/profile
+sudo chmod 644 /etc/profile
+
+sudo wget -P /etc/yum.repos.d/ http://spot.fedorapeople.org/steam/steam.repo
+sudo yum -y install steam
