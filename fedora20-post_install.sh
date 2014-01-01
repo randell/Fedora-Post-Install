@@ -91,3 +91,6 @@ sudo yum -y install steam
 
 sudo yum install php php-common
 sudo yum install php-pecl-apc php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongo php-sqlite php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+
+sudo usermod -a -G apache "$USER"
+sudo chown -R "$USER":apache /var/www
